@@ -1,10 +1,14 @@
 import statistics
+from typing import List
+from song import Song
 
 
 class SongsDataset:
+    songs = List[Song]
 
-    def __init__(self, songs):
+    def __init__(self, songs: List[Song]):
         self.songs = songs
+
 
     # Bendri
     def attribute_count(self, index):
